@@ -7,10 +7,6 @@ services:
       - key: APP_ENV
         value: production
       - key: SQLITE_PATH
-        value: /data/app.db
+        value: ./app.db
       - key: SCRUMBOY_MODE
         value: full
-    disk:
-      name: scrumboy-data
-      mountPath: /data
-      sizeGB: 1
